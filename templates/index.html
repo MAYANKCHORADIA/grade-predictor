@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Media Analytics</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to *Social*</h1>
+            <nav>
+                <a href="/create_post" class="nav-link">Create Post</a>
+                <a href="/feed" class="nav-link">Feed</a>
+                <a href="/register" class="nav-link">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Connect. Share. Discover.</h2>
+            <p>Join the conversation, share your moments, and stay connected with your community.</p>
+            <a href="/register" class="cta-button">Sign Up Now</a>
+        </section>
+
+        <section class="features">
+            <h2>Why Join Us?</h2>
+            <div class="feature-boxes">
+                <div class="feature-box">
+                    <i class="fa fa-pencil-alt"></i>
+                    <h3>Create Posts</h3>
+                    <p>Share your thoughts, ideas, and moments with your followers.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fa fa-heart"></i>
+                    <h3>Like & Comment</h3>
+                    <p>Engage with posts you love by liking and commenting.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fa fa-share"></i>
+                    <h3>Share Moments</h3>
+                    <p>Share posts with your friends and followers instantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-cta">
+            <p>Ready to start your journey?</p>
+            <a href="/register" class="cta-button">Get Started</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Social Media Analytics. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
